@@ -172,7 +172,7 @@ ahead</span>, not the war behind.
 
 <div class="flex-[0.8] flex justify-center">
   <div class="bg-[#1a0000] p-4 rounded-2xl shadow-2xl border-4 border-[#d1181e] transition-transform duration-300 ease-in-out hover:scale-105">
-    <img src="{{ url_for('static', filename='img/image_1_1_starter.png') }}"
+    <img src="img/image_1_1_starter.png"
          alt="Redefine Training"
          class="w-full max-w-xs md:max-w-md object-contain" />
   </div>
@@ -274,20 +274,20 @@ ahead</span>, not the war behind.
 <section class="bg-white py-20 px-6">
   <div class="max-w-7xl mx-auto">
     <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <img 
-        src="{{ url_for('static', filename='img/2.png') }}" 
+     <img 
+        src="img/2.png"
         alt="Train Better Than Yesterday" 
         class="gallery-img w-full h-auto rounded-xl shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer"
         onclick="openModal(this.src, this.alt)"
       >
       <img 
-        src="{{ url_for('static', filename='img/3.png') }}" 
+        src="img/3.png"
         alt="Face the unknown. Win Anyway." 
         class="gallery-img w-full h-auto rounded-xl shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer"
         onclick="openModal(this.src, this.alt)"
       >
-      <img 
-        src="{{ url_for('static', filename='img/4.png') }}" 
+     <img 
+        src="img/4.png"
         alt="Train before the threat has a name." 
         class="gallery-img w-full h-auto rounded-xl shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer"
         onclick="openModal(this.src, this.alt)"
@@ -535,13 +535,13 @@ News Item
     <div 
       x-data="{
         logos: [
-          '{{ url_for("static", filename="img/marines.png") }}',
-          '{{ url_for("static", filename="img/american_navy_1.png") }}',
-          '{{ url_for("static", filename="img/us_army.png") }}',
-          '{{ url_for("static", filename="img/ncpd_1.png") }}',
-          '{{ url_for("static", filename="img/nypd_1.png") }}',
-          '{{ url_for("static", filename="img/mtoa-logo.png") }}',
-           '{{ url_for("static", filename="img/sof-week-logo.webp") }}',
+          'img/marines.png',
+'img/american_navy_1.png',
+'img/us_army.png',
+'img/ncpd_1.png',
+'img/nypd_1.png',
+'img/mtoa-logo.png',
+'img/sof-week-logo.webp'
         ],
         currentIndex: 0,
         visibleCount: 3,
@@ -665,7 +665,7 @@ News Item
       
       <!-- Icon -->
       <div class="flex justify-center md:justify-start">
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Engineer Icon" class="w-32 h-auto" />
+        <img src="img/logo.png" alt="Engineer Icon" class="w-32 h-auto" />
       </div>
 
       <!-- Office & Contact -->
