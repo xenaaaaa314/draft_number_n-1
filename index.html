@@ -603,17 +603,6 @@ News Item
 <section id="contact" class="bg-white py-32 px-6 border-t border-gray-200">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-  <!-- Flash Message Block (put here) -->
-  {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-      <ul class="mb-4 space-y-2">
-        {% for category, message in messages %}
-          <li class="text-{{ 'green-600' if category == 'success' else 'red-600' }}">{{ message }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  {% endwith %}
-
     <!-- Left: Contact Form -->
     <div class="bg-gray-50 p-8 rounded-xl shadow-md h-full">
       <h2 class="text-3xl font-bold mb-6 text-black">Contact Us</h2>
